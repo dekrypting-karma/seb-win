@@ -277,11 +277,11 @@ namespace SebWindowsClient
                         string manufacturer = item["Manufacturer"].ToString().ToLower();
                         string model = item["Model"].ToString().ToLower();
                         if ((manufacturer == "microsoft corporation" && !model.Contains("surface"))
-                            || manufacturer.Contains("vmware")
-                            || manufacturer.Contains("parallels software") 
+                            //|| manufacturer.Contains("vmware")
+                            //|| manufacturer.Contains("parallels software") 
                             || manufacturer.Contains("xen")
                             || model.Contains("xen")
-                            || model.Contains("virtualbox"))
+                            //|| model.Contains("virtualbox"))
                         {
                             return true;
                         }
